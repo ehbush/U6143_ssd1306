@@ -239,7 +239,7 @@ void LCD_DisplayTemperature(void)
   fgets(buffer, sizeof (buffer),fp);                                    //Read the CPU load
   pclose(fp);
   buffer[3]='\0';        
-  strcpy(ip,GetIpAddress());   //Get the IP address of the device's wireless network card
+  strcpy(ip,GetIpAddress());   //Get the IP address of eth0 
   symbol=strcmp(IPSource,ip);
   if(symbol!=0)
   {
