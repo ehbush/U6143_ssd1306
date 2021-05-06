@@ -1,5 +1,5 @@
 # UCTRONICS Raspberry Pi Ultimate Rack | 0.91in OLED Display Code (Originally Titled) U6143_ssd1306
-## Preparation | (Raspberry PiOS)
+## Preparation | Raspberry PiOS
 ```bash
 sudo raspi-config
 ```
@@ -30,7 +30,7 @@ sudo make clean && sudo make
 sudo ./display
 ```
 
-## Automate Starting on Boot | (Raspberry PiOS)
+## Automate Starting on Boot | Raspberry PiOS
 - Open the rc.local file 
 ```bash
 sudo nano /etc/rc.local
