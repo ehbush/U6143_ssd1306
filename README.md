@@ -1,14 +1,22 @@
-# U6143_ssd1306
-## Preparation
+# UCTRONICS Raspberry Pi Ultimate Rack | 0.91in OLED Display Code (Originally Titled) U6143_ssd1306
+## Preparation | (Raspberry PiOS)
 ```bash
 sudo raspi-config
 ```
 Choose Interface Options 
-Enable i2c
+Enable I2C
+Exit Raspi Config, choosing "Yes" to reboot the system
 
+## Install Dependencies
+### For C
+- build-essential
+- wiringpi
+```bash
+sudo apt-get install build-essential -y && sudo apt-get install wiringpi -y
+```
 ##  Clone U6143_ssd1306 library 
 ```bash
-git clone https://github.com/UCTRONICS/U6143_ssd1306.git
+git clone https://github.com/ehbush/U6143_ssd1306.git
 ```
 ## Compile 
 ```bash
@@ -22,7 +30,7 @@ sudo make clean && sudo make
 sudo ./display
 ```
 
-## Add automatic start script
+## Automate Starting on Boot | (Raspberry PiOS)
 - Open the rc.local file 
 ```bash
 sudo nano /etc/rc.local
@@ -34,7 +42,10 @@ sudo make clean
 sudo make 
 sudo ./display &
 ```
-- reboot your system
+- Reboot the Pi
+```bash
+sudo reboot now
+```
 
 ## For older 0.91 inch lcd without mcu 
 - For the older version lcd without mcu controller, you can use python demo
