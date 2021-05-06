@@ -1,4 +1,5 @@
-# UCTRONICS Raspberry Pi Ultimate Rack | 0.91in OLED Display Code (Originally Titled) U6143_ssd1306
+# UCTRONICS Raspberry Pi Ultimate Rack | 0.91in OLED Display Code 
+- Originally Titled: U6143_ssd1306
 ## Preparation | Raspberry PiOS
 ```bash
 sudo raspi-config
